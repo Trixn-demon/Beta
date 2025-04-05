@@ -1,0 +1,321 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER FROM MorrisBr
+]=]
+
+
+-- Instances: 15 | Scripts: ?? | Modules: ??
+
+local G2L = {}
+
+-- Require G2L wrapper
+local G2L_REQUIRE = require;
+local G2L_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = G2L_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+            ModuleState.Required = true;
+            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return G2L_REQUIRE(Module);
+end
+
+
+--[[
+    Instances:
+--]]
+
+--ScreenGui
+G2L["0"] = Instance.new("ScreenGui")
+
+--ScreenGui.Frame
+G2L["1"] = Instance.new("Frame")
+
+--ScreenGui.Frame.UICorner
+G2L["2"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextButton
+G2L["3"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["4"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextButton
+G2L["5"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["6"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextButton
+G2L["7"] = Instance.new("TextButton")
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["8"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.ImageLabel
+G2L["9"] = Instance.new("ImageLabel")
+
+--ScreenGui.Frame.ImageLabel.UICorner
+G2L["10"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextBox
+G2L["11"] = Instance.new("TextBox")
+
+--ScreenGui.Frame.TextBox.UICorner
+G2L["12"] = Instance.new("UICorner")
+
+--ScreenGui.Frame.TextLabel
+G2L["13"] = Instance.new("TextLabel")
+
+--ScreenGui.Frame.TextLabel.UICorner
+G2L["14"] = Instance.new("UICorner")
+
+
+
+--[[
+    Properties:
+--]]
+--ScreenGui
+G2L["0"].Name = [[ScreenGui]]
+G2L["0"].Enabled = true
+G2L["0"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+G2L["0"].Parent = game.Players.LocalPlayer.PlayerGui
+
+--ScreenGui.Frame
+G2L["1"].Name = [[Frame]]
+G2L["1"].Active = true
+G2L["1"].AnchorPoint = Vector2.new(1, 1)
+G2L["1"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+G2L["1"].BackgroundTransparency = 0
+G2L["1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["1"].BorderSizePixel = 0
+G2L["1"].ClipsDescendants = false
+G2L["1"].Draggable = false
+G2L["1"].Position = UDim2.new(0.68959373, 0, 0.8323029, 0)
+G2L["1"].Rotation = 0
+G2L["1"].Selectable = false
+G2L["1"].SelectionOrder = 0
+G2L["1"].Size = UDim2.new(0, 314, 0, 287)
+G2L["1"].Visible = true
+G2L["1"].ZIndex = 1
+G2L["1"].Parent = G2L["0"]
+
+--ScreenGui.Frame.UICorner
+G2L["2"].Name = [[UICorner]]
+G2L["2"].CornerRadius = UDim.new(0, 10)
+G2L["2"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton
+G2L["3"].Name = [[TextButton]]
+G2L["3"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["3"].Text = [[Discord Server Link]]
+G2L["3"].TextColor3 = Color3.fromRGB(0, 208.00002, 255)
+G2L["3"].TextScaled = false
+G2L["3"].TextSize = 14
+G2L["3"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].TextStrokeTransparency = 1
+G2L["3"].TextWrapped = false
+G2L["3"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["3"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["3"].Active = true
+G2L["3"].AnchorPoint = Vector2.new(0, 0)
+G2L["3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["3"].BackgroundTransparency = 0
+G2L["3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["3"].BorderSizePixel = 0
+G2L["3"].ClipsDescendants = false
+G2L["3"].Draggable = false
+G2L["3"].Position = UDim2.new(0.18024848, 0, 0.83480984, 0)
+G2L["3"].Rotation = 0
+G2L["3"].Selectable = true
+G2L["3"].SelectionOrder = 0
+G2L["3"].Size = UDim2.new(0, 200, 0, 30)
+G2L["3"].Visible = true
+G2L["3"].ZIndex = 1
+G2L["3"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["4"].Name = [[UICorner]]
+G2L["4"].CornerRadius = UDim.new(0, 13)
+G2L["4"].Parent = G2L["3"]
+
+--ScreenGui.Frame.TextButton
+G2L["5"].Name = [[TextButton]]
+G2L["5"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["5"].Text = [[Valid Key]]
+G2L["5"].TextColor3 = Color3.fromRGB(1, 221.00002, 255)
+G2L["5"].TextScaled = false
+G2L["5"].TextSize = 14
+G2L["5"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].TextStrokeTransparency = 1
+G2L["5"].TextWrapped = false
+G2L["5"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["5"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["5"].Active = true
+G2L["5"].AnchorPoint = Vector2.new(0, 0)
+G2L["5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["5"].BackgroundTransparency = 0
+G2L["5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["5"].BorderSizePixel = 0
+G2L["5"].ClipsDescendants = false
+G2L["5"].Draggable = false
+G2L["5"].Position = UDim2.new(0.18024848, 0, 0.4241177, 0)
+G2L["5"].Rotation = 0
+G2L["5"].Selectable = true
+G2L["5"].SelectionOrder = 0
+G2L["5"].Size = UDim2.new(0, 200, 0, 30)
+G2L["5"].Visible = true
+G2L["5"].ZIndex = 1
+G2L["5"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["6"].Name = [[UICorner]]
+G2L["6"].CornerRadius = UDim.new(0, 13)
+G2L["6"].Parent = G2L["5"]
+
+--ScreenGui.Frame.TextButton
+G2L["7"].Name = [[TextButton]]
+G2L["7"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["7"].Text = [[Get Key]]
+G2L["7"].TextColor3 = Color3.fromRGB(0, 221.00002, 255)
+G2L["7"].TextScaled = false
+G2L["7"].TextSize = 14
+G2L["7"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].TextStrokeTransparency = 1
+G2L["7"].TextWrapped = false
+G2L["7"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["7"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["7"].Active = true
+G2L["7"].AnchorPoint = Vector2.new(0, 0)
+G2L["7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["7"].BackgroundTransparency = 0
+G2L["7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["7"].BorderSizePixel = 0
+G2L["7"].ClipsDescendants = false
+G2L["7"].Draggable = false
+G2L["7"].Position = UDim2.new(0.18024848, 0, 0.56216305, 0)
+G2L["7"].Rotation = 0
+G2L["7"].Selectable = true
+G2L["7"].SelectionOrder = 0
+G2L["7"].Size = UDim2.new(0, 200, 0, 30)
+G2L["7"].Visible = true
+G2L["7"].ZIndex = 1
+G2L["7"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextButton.UICorner
+G2L["8"].Name = [[UICorner]]
+G2L["8"].CornerRadius = UDim.new(0, 13)
+G2L["8"].Parent = G2L["7"]
+
+--ScreenGui.Frame.ImageLabel
+G2L["9"].Name = [[ImageLabel]]
+G2L["9"].Image = [[rbxassetid://98912541569015]]
+G2L["9"].ImageColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].ScaleType = Enum.ScaleType.Stretch
+G2L["9"].SliceCenter = Rect.new(0, 0, 0, 0)
+G2L["9"].TileSize = UDim2.new(1, 0, 1, 0)
+G2L["9"].Active = false
+G2L["9"].AnchorPoint = Vector2.new(0, 0)
+G2L["9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["9"].BackgroundTransparency = 0
+G2L["9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["9"].BorderSizePixel = 0
+G2L["9"].ClipsDescendants = false
+G2L["9"].Draggable = false
+G2L["9"].Position = UDim2.new(0.026996296, 0, 0.019376483, 0)
+G2L["9"].Rotation = 0
+G2L["9"].Selectable = false
+G2L["9"].SelectionOrder = 0
+G2L["9"].Size = UDim2.new(0, 57, 0, 51)
+G2L["9"].Visible = true
+G2L["9"].ZIndex = 1
+G2L["9"].Parent = G2L["1"]
+
+--ScreenGui.Frame.ImageLabel.UICorner
+G2L["10"].Name = [[UICorner]]
+G2L["10"].CornerRadius = UDim.new(0, 8)
+G2L["10"].Parent = G2L["9"]
+
+--ScreenGui.Frame.TextBox
+G2L["11"].Name = [[TextBox]]
+G2L["11"].FontFace = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+G2L["11"].MultiLine = false
+G2L["11"].PlaceholderColor3 = Color3.new(0.7, 0.7, 0.7)
+G2L["11"].PlaceholderText = [[]]
+G2L["11"].Text = [[Enter Your Key]]
+G2L["11"].TextColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].TextScaled = false
+G2L["11"].TextSize = 14
+G2L["11"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].TextStrokeTransparency = 1
+G2L["11"].TextWrapped = false
+G2L["11"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["11"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["11"].Active = true
+G2L["11"].AnchorPoint = Vector2.new(0, 0)
+G2L["11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["11"].BackgroundTransparency = 0
+G2L["11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["11"].BorderSizePixel = 0
+G2L["11"].ClipsDescendants = false
+G2L["11"].Draggable = false
+G2L["11"].Position = UDim2.new(0.18024848, 0, 0.22473602, 0)
+G2L["11"].Rotation = 0
+G2L["11"].Selectable = true
+G2L["11"].SelectionOrder = 0
+G2L["11"].Size = UDim2.new(0, 199, 0, 49)
+G2L["11"].Visible = true
+G2L["11"].ZIndex = 1
+G2L["11"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextBox.UICorner
+G2L["12"].Name = [[UICorner]]
+G2L["12"].CornerRadius = UDim.new(0, 13)
+G2L["12"].Parent = G2L["11"]
+
+--ScreenGui.Frame.TextLabel
+G2L["13"].Name = [[TextLabel]]
+G2L["13"].FontFace = Font.new([[rbxasset://fonts/families/HighwayGothic.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+G2L["13"].Text = [[Azure Lane Hub Key Systems]]
+G2L["13"].TextColor3 = Color3.fromRGB(1, 208.00002, 255)
+G2L["13"].TextScaled = false
+G2L["13"].TextSize = 14
+G2L["13"].TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].TextStrokeTransparency = 1
+G2L["13"].TextWrapped = false
+G2L["13"].TextXAlignment = Enum.TextXAlignment.Center
+G2L["13"].TextYAlignment = Enum.TextYAlignment.Center
+G2L["13"].Active = false
+G2L["13"].AnchorPoint = Vector2.new(0, 0)
+G2L["13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G2L["13"].BackgroundTransparency = 0
+G2L["13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+G2L["13"].BorderSizePixel = 0
+G2L["13"].ClipsDescendants = false
+G2L["13"].Draggable = false
+G2L["13"].Position = UDim2.new(0.24532965, 0, 0.017071554, 0)
+G2L["13"].Rotation = 0
+G2L["13"].Selectable = false
+G2L["13"].SelectionOrder = 0
+G2L["13"].Size = UDim2.new(0, 229, 0, 33)
+G2L["13"].Visible = true
+G2L["13"].ZIndex = 1
+G2L["13"].Parent = G2L["1"]
+
+--ScreenGui.Frame.TextLabel.UICorner
+G2L["14"].Name = [[UICorner]]
+G2L["14"].CornerRadius = UDim.new(0, 13)
+G2L["14"].Parent = G2L["13"]
+
+--[[
+    Scripts
+--]]
+
+return G2L["0"], require;
